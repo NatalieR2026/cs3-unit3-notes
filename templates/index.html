@@ -3,13 +3,20 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
     <h1> My First Flask App</h1>
 
-    <p>Blah Blah Paragraph</p>
+    {% if name %}
+    <p>Hello, {{ name }}!</p>
+
+    {% else %}
+    <p>Hello, visitor!</p>
+
+    {% endif %}
     
 </body>
 
