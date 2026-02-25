@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&family=Special+Elite&display=swap');
+
 body {
-    background: rgb(52, 85, 184);
+    /* background: rgb(222, 218, 173); */
+    background: linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%);
     color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IM Fell French Canon';
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    color: rgb(19, 83, 19);
-    font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(48, 97, 51);
+    font-style: bold;
+    font-family: 'Special Elite';
     text-align: center;
     text-shadow: 2px 2px 0px rgb(9, 47, 9);
 }
@@ -17,4 +24,22 @@ p {
     font-weight: bold;
     padding: 10px;
     border: 5px double rgb(9, 47, 9);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background: var(--accent-dk);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.page-content {
+    flex:1;
+    padding: 15px;
 }

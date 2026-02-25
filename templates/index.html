@@ -8,15 +8,17 @@
 
 <body>
 
-    <h1> My First Flask App</h1>
+    <div class="page-content">
 
-    {% if name %}
-    <p>Hello, {{ name }}!</p>
+        <h1> My First Flask App</h1>
+        
+        {% if name %}
+        <p>Hello, {{ name }}!</p>
+        {% else %}
+        <p>Hello, visitor!</p>
+        {% endif %}
 
-    {% else %}
-    <p>Hello, visitor!</p>
-
-    {% endif %}
+    </div>
     
 </body>
 
