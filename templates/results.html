@@ -10,6 +10,15 @@
 
     <h1>RESULTS:</h1>
 
+    <p>Secret Identity</p>
+
+    <dl>
+        {% for key, val in form_data.items() %}
+            <dt> {{ key }} </dt>
+            <dd> {{ val }} </dd>
+        {% endfor %}
+    </dl>
+
     <a href="/">Back</a>
 
 </body>

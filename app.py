@@ -9,8 +9,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     # Pass variables from Python to HTML!
-    name_data = None
-    return render_template("index.html", name=name_data)
+    name_data = "natalie"
+    lucky_num = 13
+    return render_template("index.html", name=name_data, num=lucky_num)
 
 
 # function to handle form submission

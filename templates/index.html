@@ -9,13 +9,23 @@
 <body>
     <div class="page-content">
 
-        <h1> My First Flask App</h1>
+        <h1>My First Flask App</h1>
         
-        {% if name %}
-        <p>Hello, {{ name }}!</p>
-        {% else %}
-        <p>Hello, visitor!</p>
-        {% endif %}
+        <div class="centered">
+
+            {% if name %}
+            <h2>Hello, {{ name }}!</h2>
+            {% else %}
+            <h2>Hello, visitor!</h2>
+            {% endif %}
+
+            <p>my lucky number is {{ num }}</p>
+
+        </div>
+
+        
+        <hr>
+
 
         <form action="/submit" method="POST">
             <!-- Text Input -->
